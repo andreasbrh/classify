@@ -1,0 +1,5 @@
+To run the jar file, make sure to specify --class "classify" and -master local[*], also the jar crashes at the end,
+since on windows it is not allowed to delete temporary files - it is supposed to not crash on linux. You still get
+output.
+
+It worked for me this way: $path to spark-submit ---class "classify" --master local['] $path_to_jar $path_to_input_arguments $path_to_output_location
